@@ -1,0 +1,255 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: arial, sans-serif;
+
+}
+body{
+    height: 100%;
+
+}
+header{
+    height: 48px;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px;
+}
+section{
+    width: auto;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
+
+
+
+
+nav ul, nav li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    margin-right: 15px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000000;
+}
+nav li button{
+    cursor: pointer;
+    padding: 7px 19px 7px 19px;
+    background-color: #1a73e8;
+    border: 1px solid #1a73e8;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+nav li a:hover{
+    text-decoration: underline;
+}
+nav li button:hover{
+    box-shadow: 0px 0px 10px #4690f1;
+}
+
+
+
+
+.logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 90%;
+    height: 100%;
+}
+.search_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+form input{
+    width: 35vw;
+    height: auto;
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+.aux_buttons{
+    display: flex;
+}
+.aux_buttons button{
+    cursor: pointer;
+    background-color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    border-radius: 5px;
+    padding: 7px 14px 7px 14px;
+}
+.aux_buttons button:hover{
+    box-shadow: 0px 0px 5px #ccc;
+}
+.aux_buttons button:first-child{
+    margin-right: 5px;
+}
+.protect_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    color: #5c5c5c;
+}
+.protect_box span{
+    font-size: 13px;
+}
+.protect_box a{
+    text-decoration: none;
+    color: #4690f1;
+}
+.protect_box a:hover{
+    text-decoration: underline;
+}
+.protect_box img{
+    width: 5%;
+    height: 100%;
+    margin-right: 5px;
+}
+.lang{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    color: #5c5c5c;
+    font-size: 13px;
+}
+.lang a{
+    text-decoration: none;
+    color: #4690f1;
+}
+.lang a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #CCC;
+}
+.country{
+    width: 100%;
+    padding: 12px 0px 12px 0px;
+    border-bottom: 1px solid #F8F9FA;
+    font-size: 14px;
+}
+.country span{
+    margin-left: 20px;
+}
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 0px 12px 0px;
+}
+.about{
+    margin-left: 20px;
+}
+.config{
+    margin-right: 20px;
+}
+.footer_content a{
+    font-size: 14px;
+}
+
+
+
+@media (max-width:768px){
+    nav li a{
+        font-size: 11px;
+    }
+    nav li button{
+        font-size: 12px;
+    }
+    .aux_buttons{
+        display: none;
+    }
+    .logo img{
+        width: 66%;
+    }
+    form input{
+        width: 45vw;
+    }
+    .protect_box img{
+        width: 4%;
+    }
+    .protect_box span, .lang{
+        font-size: 10px;
+    }
+    .footer_content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .country , .footer_content a{
+        font-size: 10px;
+    }
+}
+@media (max-width: 425px){
+        .protect_box img{
+            visibility: hidden;
+        }
+        .logo img{
+            width: 100%;
+        }
+        form input{
+            width: 80vw;
+            padding: 5px 7px 5px 7px ;
+            font-size: 12px;
+        }
+        .about{
+            margin-left: 0;
+        }
+        .config{
+            margin-right: 0;
+        }
+        .footer_content nav li {
+            margin-right: 8px;
+        }
+}
